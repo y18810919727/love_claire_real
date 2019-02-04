@@ -1,0 +1,175 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>送给我家的姿姿 -</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+		#moonid { position: relative; }
+		/*#loveHeart{*/
+			/*background:linear-gradient(to right bottom,rgba(0,0,0,0.9),rgba(0,0,0,0)),url(background/back1.jpg) no-repeat center;*/
+			/*background-size:400px;*/
+			/*opacity:0.3*/
+		/*}*/
+	</style>
+<meta name="keywords" content="" />
+<meta name="description" content="" />	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+	
+	<script type="text/javascript" src="js/jq.snow.js"></script>
+</head> 
+
+<body>
+<!--下面是调用方法和参数说明-->
+	<script>
+	$(function(){
+		$.fn.snow({ 
+			minSize: 5,		//雪花的最小尺寸
+			maxSize: 50, 	//雪花的最大尺寸
+			newOn: 150		//雪花出现的频率 这个数值越小雪花越多
+		});
+	});
+	</script>
+	<div id="mainDiv">
+		<div id="content">
+			<img id="back">
+			</img>
+			<div id="code" >
+				<span class="comments">/**</span><br />
+        <span class="space"/><span class="comments">* 亲爱的：今天是2019年2月4日。</span><br />
+        <span class="space"/><span class="comments">* 我写了这个网站来庆祝这个特殊的日子。 </span><br />
+        <span class="space"/><span class="comments">* 去年的今天我们在一起了 </span><br />
+        <span class="space"/><span class="comments">* 我当时送了你百年一遇的美腻月亮然后,你就成我的人儿啦！(嘿嘿，开心), </span><br />
+				<span class="space"/><span class="comments">从此</span><br />
+				小可爱 u = <span class="keyword">new</span> Girl(<span class="string">"何润姿"</span>);<br/>
+				大坏蛋 i = <span class="keyword">new</span> Boy(<span class="string">"袁兆麟"</span>);<br />
+				我们的2018 = <span class="keyword"></span>i.love(u) + u.love(i)<span class="string"></span>;<br />
+				<span class="comments">// 都怪当时我选得这表白日子，咱们近几年都没法一起过纪念日了</span><br />
+				<span class="comments">// 所以不在你身边的我,这一天一定要给你一个大大的surprise !</span><br />
+				<span class="comments">// 希望你能够喜欢</span><br />
+				<span class="comments">// 感谢你一年的陪伴、奉献</span><br />
+				<span class="comments">// 我知道我有时候比较幼稚、比较冲动、比较皮</span><br />
+				<span class="comments">// 有时候你也受了很多委屈,但你最后总是能原谅我、信任我，毫无保留、不忘初心地与我在一起接着往前走</span><br />
+				<span class="comments">// 我真的很感激，我以后一定会慢慢变得更好哒，少惹你操心、少惹你生气</span><br />
+        <span class="comments">//  </span><br />
+				我想你;<br />
+				<span class="comments">// 想到没事就喜欢打开手机看你的照片漏出痴汉般的笑容! </span><br />
+				我想马上飞到你身边 <br />
+				<span class="comments">// 我喜欢和你过朝朝暮暮的生活！</span><br />
+				我爱你;<br />
+				<span class="comments">//从跟你去唐宫吃茶点开始，便从未改变!</span><br />
+				<span class="comments">// 我会努力完成你那三个要求，要等我哦！</span><br />
+				<span class="comments2">// 祝我们的一周年纪念日快乐。阿门</span><br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						        晕姿,我已经相爱了：
+						<div id="elapseClock"></div>
+					</div>
+
+					<div id="loveu">
+						<div class="signature">--大黄、巨泰、坏坏</div>
+					</div>
+				</div>
+
+
+				</div>
+				</div>
+			</div>
+
+</div>
+	<div class="bg1">	
+		<div class="main">
+			<footer style="line-height:20px">
+                <div id="copyright">
+                     <a href='' target="_blank"></a> 
+                    <a href="" target="_blank"></a>
+                    <a href="" target="_blank"></a>
+                </object>
+                </div>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2 ;
+		var offsetY = $("#loveHeart").height() / 2 - 55 ;
+		// var offsetX = $("#moons").width() / 2;
+		// var offsetY = $("#moons").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2018, 1, 4);
+		together.setHours(1);
+		together.setMinutes(45);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		var currentIndex = 0;
+        function changeBg() {
+
+//定义要切换的背景图片，双引号里面，可以放任意多个
+
+            var bgImgs = ['0.jpg','1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg',
+				'9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg','15.jpg','16.jpg','17.jpg','18.jpg',
+				'19.jpg','20.jpg','21.jpg','22.jpg','23.jpg','24.jpg','25.jpg','26.jpg','27.jpg','28.jpg'];
+
+            $("#back").fadeTo('slow', 0, function () {
+
+                if (currentIndex >= bgImgs.length)
+                    currentIndex = 0;
+                	$("#back").attr('src', 'background/' + bgImgs[currentIndex] );
+                	console.log('background/' + bgImgs[currentIndex])
+                	console.log(currentIndex)
+
+                	$("#back").fadeTo('slow', 0.2)
+
+                }
+
+			)
+
+            // $("#back").fadeTo('slow', 0.0, function () {
+			//
+            //     // $(this).css('background', 'url(background/' + bgImgs[currentIndex] + ') no-repeat');
+            //     // $(this).css('background-size', '600px');
+			//
+            //     // $("#back").animate({opacity:0.2});
+            //     $("#back").attr('src', 'background/' + bgImgs[currentIndex] );
+            //     console.log($(this))
+			//
+            // }).fadeTo('slow', 0.3);
+
+            currentIndex += 1;
+        }
+
+        setInterval("changeBg()", 8000); //设定定时切换，单位为毫秒，比如：30分钟=1800秒=1800000毫秒
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+	<embed src="perfect.mp3" autostart="true" loop="true" hidden="true"></embed>
+</body>
+</html>
